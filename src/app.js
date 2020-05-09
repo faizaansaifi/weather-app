@@ -7,6 +7,8 @@ const fore = require('./utils/forecast');
 
 const app = express();
 
+const port = process.env.PORT || 3000
+
 //Define paths for Express.js Config
 const publicDir = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -78,6 +80,6 @@ app.get('*', (req,res) => {
         errorMsg: 'Somethhing went wrong. Please try again after some time'
     })
 })
-app.listen(3000, () => {
-    console.log("Server is running at localhost:3000")
+app.listen(port, () => {
+    console.log("Server is running at localhost:"+port)
 });
