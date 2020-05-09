@@ -1,13 +1,3 @@
-// fetch("http://localhost:3000/weather?search=!").then((res) => {
-//     res.json().then((data) => {
-//         if(data.error) {
-//             console.log("Error Found")
-//         }
-//         else {
-//             console.log(data)
-//         }
-//     })
-// })
 
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
